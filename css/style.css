@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Public+Sans&family=Roboto&display=swap');
+
+body{
+    font-family: 'Public Sans', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: hsl(233, 8%, 62%); 
+}
+
+ul{
+    list-style: none;
+}
+
+i{
+    margin-right: 5px;
+}
+
+h2{
+    font-size: 40px;
+    color: hsl(233, 26%, 24%);    
+}
+
+p{
+    color: hsl(233, 8%, 62%);
+}
+
+h1{
+    color: hsl(233, 26%, 24%);
+}
+
+h3{
+    color: hsl(233, 26%, 24%);
+}
+
+.header{
+    justify-content: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 30px 100px 30px 100px;
+}
+
+.header img{
+    height: 25px;
+}
+
+.menu{
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a{
+    font-size: 18px;
+}
+
+.boton{
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 30px;
+    background-image: url(../img/bg\ boton.png);
+    color: white;   
+}
+
+.baner{
+    overflow: hidden;
+    position: relative;
+    background-image: url(../img/bg-intro-desktop.svg);
+    background-position: 750px -400px;
+    background-repeat: no-repeat;
+    height: 800px;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    /* me lo acomoda en el eje Y */
+    align-items: center;
+    padding: 1px ;
+    text-align: center;
+}
+
+.bg-celular {
+    position: absolute;
+    left: 67%;
+    top: -13%;
+    background-size: contain;
+}
+
+.fondo{
+    background-color: hsl(0, 0%, 98%);
+}
+
+.titulo{
+    justify-content: center;
+    margin-left: 100px;
+}
+
+.baner h1{
+    width: 433px;
+    display: flex;
+    text-align: start;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.baner p{
+    width: 337px;
+    height: 88px;
+    font-size: 16px;
+    display: flex;
+    text-align: start;
+}
+
+.titulo .boton{
+    margin-right: 500px;
+}
+
+.mid{
+    text-align: start;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.mid h2{
+    margin-bottom: 20px;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.card p{
+    text-align: start;
+}
+
+.box1{
+    background-color: #FBFAF6;
+    height: 312px;
+    width: 265px;
+}
+
+.box1 img{
+    margin-bottom: 15px;
+}
+
+.box1 h3{
+    margin-bottom: 15px;
+}
+
+.fin-titulo{
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.card2{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px 1px 100px 0px;
+    margin-bottom: 50px;   
+}
+
+.card2 img{
+    width: 265px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.card2 p{
+    text-align: start;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+
+.texto{
+    padding: 18px;
+}
+
+.recurso{
+    background-color: #FBFAF6;
+    height: 312px;
+    width: 265px;
+}
+
+.recurso a{
+    color: hsl(233, 26%, 24%);
+}
+
+footer{
+    background-color: hsl(233, 26%, 24%);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px 30px 100px;
+}
+
+.caja img{
+    height: 50px;
+}
+
+.redes{
+    margin-top: 25px;
+}
+
+.redes a{
+    padding: 8px;
+}
+
+.redes i{
+    color: white;
+}
+
+.nav-footer{
+    display: flex;
+    gap: 80px;
+}
+
+.nav-footer li{
+    padding: 10px;
+}
+
+.caja-boton a{
+    margin-left: 25px;
+}
+
+.caja-boton p{
+    padding: 30px;
+}
+
+.menu a:hover{
+    color: hsl(233, 26%, 24%);
+}
+
+.recurso a:hover{
+    color: hsl(192, 70%, 51%);
+}
+
+footer a:hover{
+    color: hsl(192, 70%, 51%);
+}
+
+footer i:hover{
+    color: hsl(192, 70%, 51%);
+}
+
+.menu a:before{
+    content:'';
+    background: cadetblue;
+    position:absolute;
+    bottom:860px; 
+    height: 0px;
+    width: 0px;
+    transition-duration: 0.5s;
+    /* alto y ancho=0 */
+   /* transition: ; */
+}
+
+.menu a:hover::before{
+    height: 5px;
+    width: 65px;
+    /* ancho final y alto */
+}
+
+.fondo .titulo{
+    display: none;
+}
+
+@media(max-width: 580px) {
+
+    .header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width: 375px) {
+
+    .menu{
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .derechos{
+        font-size: 13px;
+    }
+
+    .baner{
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+        background-image: url(../img/bg-intro-mobile.svg);
+        background-position: 10px 10px;
+        height: 380px;
+    }
+
+    .bg-celular{
+        position: absolute;
+        width: 360px;
+        left: 3px;   
+    }
+
+    .titulo{
+        display: none;  
+    }
+
+    .fondo .titulo{
+        display: inline-block;
+        margin-left: 30px;
+        width: 300px;
+        text-align: center;
+    }
+
+    .fondo .titulo h1{
+        margin-bottom: 10px;
+    }
+
+    .fondo .titulo p{
+        text-align: start;
+        margin-bottom: 30px;
+    }
+
+    .fondo .titulo .boton{
+        margin-left: 23%;
+    }
+
+    .mid{
+        display: inline-block;
+        margin-top: 150px;
+        margin-left: 30px;
+        text-align: center;
+    }
+
+    .mid h2{
+        font-size: 35px;
+    }
+
+    .mid p{
+        text-align: start;
+    }
+
+    .card{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card p{
+        text-align: center;
+    }
+
+    .card2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recurso{
+        padding: 40px;
+    }
+
+    .fin-titulo{
+        font-size: 35px;
+        margin-left: 60px;
+    }
+
+    footer{
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .caja img{
+        margin-left: 90px;
+    }
+
+    .redes{
+        display: inline-block;
+        margin-left: 90px;
+    }
+
+    .nav-footer{
+        flex-direction: column;
+        gap: 0px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .caja-boton{
+        text-align: center;
+    }
+
+    .caja-boton a{
+        margin-left: 0px;
+    }
+
+    }
