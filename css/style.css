@@ -157,14 +157,14 @@ h3{
 .fin-titulo{
     margin-left: 100px;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .card2{
     display: flex;
     justify-content: center;
     gap: 50px;
-    padding: 40px 1px 100px 0px;
-    margin-bottom: 50px;   
+    margin-bottom: 150px;   
 }
 
 .card2 img{
@@ -268,11 +268,54 @@ footer i:hover{
     /* ancho final y alto */
 }
 
-.fondo .titulo{
+.fondo .mid{
     display: none;
 }
 
-@media(max-width: 580px) {
+@media(max-width: 1250px) {
+    .card{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card2{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 999px){
+    footer{
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .img-footer{
+        text-align: center;
+    }
+
+    .redes{
+        text-align: center;
+        margin-bottom: 15px;
+        
+    }
+
+    .nav-footer{
+        flex-direction: column;
+        gap: 0px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .caja-boton{
+        text-align: center;
+    }
+
+    .caja-boton a{
+        margin-left: 0px;
+    }
 
     .header{
         flex-direction: column;
@@ -283,9 +326,28 @@ footer i:hover{
         margin-top: 15px;
         margin-bottom: 15px;
     }
+} 
+
+@media(max-width: 724px) {
+    .titulo{
+        display: none;  
+    }
+
+    .fondo{
+        overflow: hidden;
+    }
+
+    .fondo .mid{
+        display: inline-block;     
+    }
+
+    .fondo .mid p{
+        margin-bottom: 30px;
+    }
+
 }
 
-@media(max-width: 375px) {
+@media(max-width: 666px) {
 
     .menu{
         flex-direction: column;
@@ -315,24 +377,8 @@ footer i:hover{
         display: none;  
     }
 
-    .fondo .titulo{
-        display: inline-block;
-        margin-left: 30px;
-        width: 300px;
-        text-align: center;
-    }
-
-    .fondo .titulo h1{
-        margin-bottom: 10px;
-    }
-
-    .fondo .titulo p{
-        text-align: start;
+    .fondo .mid p{
         margin-bottom: 30px;
-    }
-
-    .fondo .titulo .boton{
-        margin-left: 23%;
     }
 
     .mid{
@@ -373,35 +419,4 @@ footer i:hover{
         font-size: 35px;
         margin-left: 60px;
     }
-
-    footer{
-        justify-content: center;
-        flex-direction: column;
-        padding: 0px;
-    }
-
-    .caja img{
-        margin-left: 90px;
-    }
-
-    .redes{
-        display: inline-block;
-        margin-left: 90px;
-    }
-
-    .nav-footer{
-        flex-direction: column;
-        gap: 0px;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .caja-boton{
-        text-align: center;
-    }
-
-    .caja-boton a{
-        margin-left: 0px;
-    }
-
-    }
+}
